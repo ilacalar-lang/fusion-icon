@@ -1,22 +1,22 @@
 [
   {
     "name": "IMDb",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/512px-IMDB_Logo_2016.svg.png"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/800px-IMDB_Logo_2016.svg.png"
   },
   {
     "name": "TMDB",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tmdb.new.logo.svg/512px-Tmdb.new.logo.svg.png"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tmdb.new.logo.svg/800px-Tmdb.new.logo.svg.png"
   },
   {
     "name": "Rotten Tomatoes",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/512px-Rotten_Tomatoes.svg.png"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/800px-Rotten_Tomatoes.svg.png"
   },
   {
     "name": "Metacritic",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Metacritic.svg/512px-Metacritic.svg.png"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Metacritic.svg/800px-Metacritic.svg.png"
   },
   {
     "name": "Trakt",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Trakt.tv_logo.svg/512px-Trakt.tv_logo.svg.png"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Trakt.tv_logo.svg/800px-Trakt.tv_logo.svg.png"
   }
 ]
