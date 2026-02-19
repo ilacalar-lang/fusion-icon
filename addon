@@ -1,0 +1,46 @@
+const express = require("express");
+const axios = require("axios");
+
+const app = express();
+const PORT = 7000;
+
+const OMDB_API_KEY = "656ca293";
+
+app.get("/manifest.json", (req, res) => {
+  res.json({
+    id: "imdb.rating.addon",
+    version: "1.0.0",
+    name: "IMDb Rating Addon",
+    description: "Shows IMDb rating via OMDb",
+    resources: ["meta"],
+    types: ["movie", "series"],
+    idPrefixes: ["tt"],
+  });
+});
+
+app.get("/meta/:type/:id.json", async (req, res) => {
+  const { id, type } = req.params;
+
+  try {
+    const response = await axios.get(
+      `https://www.omdbapi.com/?i=${id}&apikey=${OMDB_API_KEY}`
+    );
+
+    const data = response.data;
+
+    res.json({
+      meta: {
+        id: id,
+        type: type,
+        name: data.Title,
+        imdbRating: data.imdbRating,
+      },
+    });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch rating" });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Addon running on http://localhost:${PORT}`);
+});
